@@ -1,0 +1,38 @@
+
+.title-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 458px;
+  height: 100%;
+  padding: 2px;
+  background: #7ec9e0;
+  color: #fff;
+  border: 7px solid #25528f;
+  border-radius: 50px;
+}
+
+.title-cont .icon-title {
+  width: 45px;
+  height: auto;
+  opacity: 0.6;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 44px;
+  -webkit-text-stroke: 2px #000;
+}
+header a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 35px;
+    position: relative;
+    right: 30px;
+    background: #3B6CB7;
+    border-radius: 60px;
+    font-size: 22px;
+}
+
+

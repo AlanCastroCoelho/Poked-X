@@ -1,0 +1,69 @@
+<div id="background">
+  <main id="cont">
+    <div class="left-pokedex">  
+      <app-pokemon-image
+        id="image-app"
+        [pokemon]="selectedPokemon"
+        [rotate]="rotateImg"
+        [imagePositionX]="imagePositionX"
+        [imagePositionY]="imagePositionY"
+      ></app-pokemon-image>
+      <div class="buttons">
+        <app-bttns
+          (showDescE)="showDescription($event)"
+          (imgNumberE)="imgNum = $event"
+          [screen]="screen"
+          class="app-bttns">
+        </app-bttns>
+        <app-stick
+          (rotateEvent)="rotateImg = $event"
+          (positionX)="imagePositionX = $event"
+          (positionY)="imagePositionY = $event"
+        >
+        </app-stick>
+      </div>
+    </div>
+    <div class="cards-desc-cont">
+      <div id="desc-cont" class="info-cont" [hidden]="!showDesc">
+        <app-pokemon-details [pokemon]="selectedPokemon"></app-pokemon-details>
+      </div>
+      <div
+        id="cards-cont"
+        class="info-cont"
+        #cards
+        (scroll)="onScroll($event)"
+        [hidden]="showDesc"
+      >
+        <app-pokemon-card
+          *ngFor="let pokemon of pokemonList; let i = index"
+          [data]="pokemon"
+          (clickId)="cardClicked($event)"
+          [selected]="pokemon.name === selectedPokemon?.name"
+          
+          #listItem
+        ></app-pokemon-card>
+      </div>
+    </div>
+    <img
+      src="/assets/images/Pokedex{{ imgNum }}.png"
+      alt=""
+      class="pokedex"
+      *ngIf="screen === 'desktop'"
+    />
+    <img
+      src="/assets/images/Pokedex1{{ imgNum }}.png"
+      alt=""
+      class="pokedex"
+      *ngIf="screen === 'tablet'"
+    />
+
+    <div *ngIf="screen === 'mobile'" class="imgs-mobile">
+      <img
+        src="/assets/images/Pokedex1{{ imgNum }}T.png"
+        alt=""
+        class="pokedex-mobile"
+      />
+      <img src="/assets/images/Pokedex11B.png" alt="" class="pokedex-mobile" />
+    </div>
+  </main>
+</div>

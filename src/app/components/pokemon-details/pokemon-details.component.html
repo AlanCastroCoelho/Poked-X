@@ -1,0 +1,15 @@
+<div id="container">
+    <div class="title-cont">
+        <app-pokemon-card
+        [fullData]="pokemon" class="poke-card"></app-pokemon-card>
+    </div>
+    <div class="tag-cont">
+        <p><span class="tag">Type</span>
+            <span class="type" *ngFor="let type of pokemon?.types"[ngClass]="type.type.name.toLowerCase()">{{type.type.name}}</span></p>
+        <p><span class="tag">Height</span>{{pokemon?.height}}'</p>
+        <p><span class="tag">Weight</span>{{pokemon?.weight}} lbs.</p>
+    </div>
+    <div class="description-txt">
+     <p>{{descripcion}}</p>
+    </div>
+</div>

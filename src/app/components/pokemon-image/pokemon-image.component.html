@@ -1,0 +1,7 @@
+<div id="img-cont">
+
+        <!-- Mostrar la imagen utilizando la máscara -->
+        <img [src]="pokemon?.sprites?.versions['generation-v']['black-white'].animated.front_default" mask="url(#custom-shape-mask)" *ngIf="pokemon && !rotate" [hidden]="" [style.marginLeft.px]="imagePositionX" [style.marginTop.px]="imagePositionY"/>
+        <img [src]="pokemon?.sprites?.versions['generation-v']['black-white'].animated.back_default" mask="url(#custom-shape-mask)" *ngIf="pokemon && rotate" [hidden]="" [style.marginLeft.px]="imagePositionX" [style.marginTop.px]="imagePositionY"/>
+
+</div>

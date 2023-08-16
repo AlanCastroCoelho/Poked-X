@@ -1,0 +1,144 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  background: repeating-linear-gradient(
+    0deg,
+    #6e9566 0px,
+    #6e9566 4px,
+    #547b4c 4px,
+    #547b4c 8px
+  );
+  gap: 4px;
+  font-size: clamp(24px, 2vw, 35px);
+}
+.title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient(
+    0deg,
+    #f4a561 0px,
+    #f4a561 4px,
+    #ec9344 4px,
+    #ec9344 8px
+  );
+  border-radius: 10px;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+.poke-card {
+  width: 100%;
+}
+
+.tag-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 1vw;
+  background: #c1c1c17a;
+  border-radius: 10px;
+  padding: 10px 6px;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+.tag-cont p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+span {
+  border-radius: 5px;
+  color: #fff;
+}
+.tag {
+  padding: 0 15px;
+  background: #3e3e3e;
+}
+.type {
+  padding: 0 7px;
+  background: rgb(103, 103, 103);
+}
+
+.description-txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(24px, 2vw, 35px);
+  background: #c1c1c17a;
+  border-radius: 10px;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  width: 100%;
+  height: fit-content;
+  padding: 30px 6px;
+}
+
+/*Tipos*/
+.grass {
+  background: #9bcc50;
+}
+.poison {
+  background: #a040a0;
+}
+.fire {
+  background: #fd7d24;
+}
+.water {
+  background: #044084;
+}
+.bug {
+  background: #719e2c;
+}
+.flying {
+  background: linear-gradient(
+    0deg,
+    rgba(95, 141, 227, 1) 0%,
+    rgba(98, 143, 228, 1) 50%,
+    rgba(155, 187, 244, 1) 50%,
+    rgba(157, 188, 245, 1) 100%
+  );
+}
+.electric {
+  background: rgb(195, 195, 0);
+}
+.ice {
+  background: #98d8d8;
+}
+.fighting {
+  background: #c03028;
+}
+.ground {
+  background: #e0c068;
+}
+.psychic {
+  background: #f85888;
+}
+.rock {
+  background: #b8a038;
+}
+.ghost {
+  background: #705898;
+}
+.dragon {
+  background: #7038f8;
+}
+
+.dark {
+  background: #705848;
+}
+
+.steel {
+  background: #b8b8d0;
+}
+
+.fairy {
+  background: #ee99ac;
+}

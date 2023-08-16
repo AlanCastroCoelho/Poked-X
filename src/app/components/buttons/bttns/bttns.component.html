@@ -1,0 +1,30 @@
+<div class="bttns-cont">
+
+  <div class="btn-left">
+    <div class="btn-sound" (click)="playNextAudio()"></div>
+    <audio #audioPlayer>
+      <source
+        [src]="'assets/audio/' + audioFiles[currentAudIndex]"
+        type="audio/mp3"
+      />
+    </audio>
+  </div>
+  <div class="btn-right">
+    <div class="backgr-btn">
+      <div class="btn-r green-btn" (click)="prevImg()"></div>
+      <div class="btn-r red-btn" (click)="nextImg()"></div>
+    </div>
+  </div>
+  
+  <div class="btn-bottom">
+    <div class="btn-desc" (click)="showDescription()">
+      <p *ngIf="screen === 'desktop'">
+        Pokemon <br />
+        Data
+      </p>
+  
+      <p *ngIf="screen === 'tablet' || screen === 'mobile'">Data</p>
+    </div>
+  </div>
+  
+</div>

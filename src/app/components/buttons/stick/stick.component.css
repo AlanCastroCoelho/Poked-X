@@ -1,0 +1,322 @@
+.stick-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    z-index: 25;
+  }
+.sticks{
+    cursor: pointer;
+    transition: all .1s ease;
+  }
+  .top {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 33%;
+    border-radius: 2px 2px 0 0;
+    background: #282C2B;
+    background-image: linear-gradient(90deg, #282C2B, #797979 119%);
+      box-shadow: 1px -1px 1px rgba(27, 27, 27, 0.54), 
+      -4px 2px 7px rgba(59, 60, 60, 0.441);
+  
+  }
+  .top:active{
+    background-image: linear-gradient(90deg, #282C2B, #656464 119%);
+    box-shadow: inset -1px 3px 4px #161616, 0px 1px 2px #353535;
+  }
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 33%;
+    height: 30%;
+    border-radius: 0px 0px 2px 2px;
+    background: #282C2B;
+      background-image: linear-gradient(380deg, #131716, #6A706F 173%);
+      box-shadow: 2px 3px 4px rgba(33, 33, 33, 0.391);	
+  
+  }
+  .left:active{
+    background-image: linear-gradient(380deg, #131716, #474949 173%);
+    box-shadow: inset 2px -1px 4px #161616, 0px 1px 2px #353535;
+  }
+  .bottom {
+    position: absolute;
+   bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 33%;
+    border-radius: 0 0 2px 2px;
+    background: #282C2B;
+    background-image: linear-gradient(55deg, #131716, #6A706F 147%);
+      box-shadow: -3px 0px 4px #00000075;
+  }
+  .bottom:active{
+    background-image: linear-gradient(55deg, #131716, rgb(78, 80, 80) 147%);
+    box-shadow: inset 2px -1px 4px #161616, 0px 1px 2px #353535;
+  }
+  .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 33%;
+    height: 30%;
+    border-radius: 2px 2px 0px 0;
+    background: #282c2b;
+    background-image: linear-gradient(303deg, #282C2B, #797979 111%);
+      box-shadow: -1px -1px 1px rgb(53, 53, 53);	
+  }
+  .right:active{
+    background-image: linear-gradient(303deg, #282C2B, #6b6b6b 111%);
+    box-shadow: inset -2px 1px 4px #161616, 0px -1px 2px #353535;
+  }
+  .circle {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    background: #282c2b;
+    background-image: linear-gradient( -134deg,#656666, #2E3231 60%);
+  }
+  .circle:active{
+    background-image: linear-gradient( -134deg,#444545, #2E3231 60%);
+    box-shadow: inset -2px 3px 4px #161616, 0px 1px 2px #353535;
+  }
+
+  @media (max-width: 768px) {
+    #cont {
+      height: 100vw;
+      transform: rotate(90deg);
+    }
+  
+    .pokedex {
+      width: 550px;
+    }
+  
+    .left-pokedex {
+      position: relative;
+      top: 185px;
+      left: -19px;
+      width: 230px;
+      height: 360px;
+    }
+  
+    #image-app {
+      position: absolute;
+      width: 205px;
+      height: 170px;
+      top: 160px;
+      left: 10px;
+    }
+    .cards-desc-cont {
+      position: absolute;
+      top: auto;
+      transform: none;
+      width: 220px;
+      height: 362px;
+    }
+  
+    .info-cont {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    #cards-cont::-webkit-scrollbar {
+      width: 6px;
+    }
+    .buttons {
+      top: 87%;
+    }
+  
+    .btn-right {
+      width: 80%;
+      height: 40%;
+    }
+    .backgr-btn {
+      height: 92%;
+      margin-left: 6px;
+      gap: 5px;
+      padding: 3px;
+    }
+  
+    .btn-right .btn-r {
+      width: 33px;
+      height: 100%;
+    }
+  
+    .btn-left {
+      height: 40%;
+      width: 20%;
+    }
+    .btn-sound {
+      width: 35px;
+    }
+  
+    .btn-bottom {
+      width: 100%;
+      height: 60%;
+      bottom: 0;
+    }
+    .btn-desc {
+      bottom: 5px;
+      left: 10px;
+      width: 95px;
+      height: 55%;
+    }
+  
+    .btn-desc p {
+      font-size: 20px;
+      letter-spacing: 7px;
+      line-height: 20px;
+    }
+  
+    .stick-cont {
+      top: 5px;
+      right: 5px;
+      width:80px;
+      height:80px;
+      border-radius: 50%;
+      z-index: 25;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .imgs-mobile{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  .pokedex-mobile{
+    height: 50vh;
+    width: 315px;
+  }
+  
+    #cont {
+      height: 100vh;
+      transform: rotate(0deg);
+    }
+  
+    .pokedex {
+      width: 440px;
+    }
+    .left-pokedex {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      width: 270px;
+      height: 45vh;
+      overflow: hidden;
+      z-index: 20;
+  
+    }
+    #image-app {
+      position: absolute;
+      width: 220px;
+      height: 46%;
+      top: 46%;
+      transform: translateY(-50%);
+    }
+    .buttons {
+      position: absolute;
+      top: 87%;
+      left: 46%;
+      transform: translate(-50%, -50%);
+      z-index: 30;
+      height: 28%;
+      width: 95%;
+      display: flex;
+    }
+    .btn-right {
+      width: 80%;
+      height: 45%;
+    }
+    .btn-right .btn-r {
+      width: 36px;
+      height: 100%;
+    }
+  
+    .btn-left {
+      height: 40%;
+      width: 20%;
+    }
+    .btn-sound {
+      position: relative;
+      left: 5px;
+      height: 98%;
+      width: auto;
+    }
+  
+    .btn-bottom {
+      width: 100%;
+      height: 55%;
+    }
+  
+    .btn-desc {
+      bottom: 3px;
+      left: 15px;
+      width: 125px;
+      height: 55%;
+    }
+  
+    .btn-desc p {
+      font-size: 25px;
+      letter-spacing: 4px;
+      line-height: 20px;
+    }
+  
+    .stick-cont {
+      top: 7%;
+      right: 18px;
+      width: 32%;
+      height: 80%;
+      border-radius: 50%;
+      z-index: 25;
+    }
+    .top {
+      width: 33%;
+      height: 33%;
+    }
+    
+    .left {
+      width: 33%;
+      height: 33%;
+  
+    }
+    
+    .bottom {
+      width: 33%;
+      height: 33%;
+    }
+    
+    .right {
+      width: 33%;
+      height: 35%;
+    }
+    .cards-desc-cont {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 46vh;
+      width: 280px;
+      overflow: hidden;
+    }
+    
+  }

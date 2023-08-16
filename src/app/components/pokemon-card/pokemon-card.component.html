@@ -1,0 +1,14 @@
+<div id="container" [ngClass]="{'cont-bckg': selected}" class="cont">
+  <img src="/assets/images/arrow-right.svg"  class="arrow-icon" *ngIf="selected"/>
+  
+  <div class="card-cont" (click)="clickId.emit(id)" [ngClass]="{'card-bckg': selected}" (click)="menuSelectAudio()">
+    <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{id}}.png' alt="" class="poke-img" [ngClass]="{'img-backg': selected}"  />
+<div class="txt right">
+    <span class="number" [ngClass]="{'number-select':selected}">N.°{{ id }}</span>
+    <span>{{data?.name | titlecase}}</span>
+  </div>
+  <audio #menuSelected>
+    <source src="/assets/audio/menu-select.mp3" type="audio/mp3" />
+  </audio>  
+</div>
+</div>
