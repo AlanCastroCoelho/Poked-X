@@ -4,7 +4,8 @@
 Esta aplicación en Angular recrea la experiencia de una Pokedex, proporcionando información y detalles sobre una amplia variedad de Pokémon utilizando los datos suministrados por la API de PokeApi. La aplicación se basa en varios componentes esenciales y un servicio que maneja las solicitudes HTTP a la API. Aprovechando la programación reactiva de RxJS, la Poked-X ofrece una interacción fluida y eficiente con flujos de datos asincrónicos.
 
 <img src="./src/assets/images/Git-Description/Home.jpg" alt="Home-Component" width="600" height="auto">
-## Características Destacadas
+
+### Características Destacadas
 
 ### 1. Programación Reactiva con RxJS
 La Poked-X utiliza la programación reactiva y la biblioteca RxJS para gestionar eficazmente flujos de datos asincrónicos. Los observables y los operadores de RxJS se emplean para manejar las interacciones con la API, procesar respuestas y manipular datos. Esto garantiza una exploración de Pokémon y detalles de usuario fluida y altamente reactiva.
