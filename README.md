@@ -3,6 +3,7 @@
 ## Descripción
 Esta aplicación en Angular recrea la experiencia de una Pokedex, proporcionando información y detalles sobre una amplia variedad de Pokémon utilizando los datos suministrados por la API de PokeApi. La aplicación se basa en varios componentes esenciales y un servicio que maneja las solicitudes HTTP a la API. Aprovechando la programación reactiva de RxJS, la Poked-X ofrece una interacción fluida y eficiente con flujos de datos asincrónicos.
 
+<img src="./src/assets/images/Git-Description/Home.jpg" alt="Home-Component" width="600" height="auto">
 ## Características Destacadas
 
 ### 1. Programación Reactiva con RxJS
@@ -23,20 +24,30 @@ La aplicación se adapta a una variedad de tamaños de pantalla, brindando una e
 El servicio PokeApiService gestiona las solicitudes HTTP a la API de PokeApi utilizando el HttpClient de Angular. Aplica la programación reactiva mediante observables y operadores RxJS para transformar y manipular datos según sea necesario.
 
 ### Home Component
-El componente Home es el núcleo de la aplicación, permitiendo a los usuarios explorar y buscar Pokémon. Carga y presenta una lista de Pokémon según la página actual, además de facilitar la carga continua de más Pokémon al desplazarse hacia abajo. Al hacer clic en un Pokémon, se muestra una imagen animada del Pokémon seleccionado y se cargan sus detalles, que se revelan al presionar el botón "Detalles del Pokémon".
-![Home-Component](./assets/images/Git-Description/home.jpg)
+El componente Home es el núcleo de la aplicación, permitiendo a los usuarios explorar y buscar Pokémon. Carga y presenta una lista de Pokémon según la página actual, además de facilitar la carga continua de más Pokémon al desplazarse hacia abajo. Al hacer clic en un Pokémon, se muestra una imagen animada del Pokémon seleccionado y se cargan sus detalles, que se revelan al presionar el botón "Pokemon Data".
+
 
 ### Pokemon Details Component
 Este componente muestra detalles específicos del Pokémon seleccionado, incluyendo una descripción detallada. Utiliza el servicio PokeApiService para obtener la descripción del Pokémon seleccionado, brindando así una experiencia informativa para el usuario.
 
+<img src="./src/assets/images/Git-Description/Details.jpg" alt="Home-Component" width="auto" height="500">
+
 ### Pokemon Card Component
 El componente PokemonCard muestra una tarjeta que representa a un Pokémon en la lista. Proporciona imagen, nombre e ID del Pokémon, resaltando visualmente si está seleccionado. El decorador @ViewChild se utiliza para acceder al elemento de audio y reproducirlo cuando se selecciona una tarjeta.
+
+<img src="./src/assets/images/Git-Description/Card.jpg" alt="Home-Component" width="400" height="auto">
 
 ### Pokemon Image Component
 El componente PokemonImage muestra la imagen animada (gif) del Pokémon, enriqueciendo la experiencia visual e interactiva. La interacción se amplía mediante el componente Stick, permitiendo mover y rotar la imagen del Pokémon.
 
+<img src="./src/assets/images/Git-Description/Image.jpg" alt="Home-Component" width="400" height="auto">
+
 ### Stick Component
 Este componente es fundamental al brindar una experiencia interactiva y lúdica al explorar y aprender sobre los Pokémon. Facilita la visualización de la imagen frontal y trasera del Pokémon, dando la ilusión de rotación. También permite mover la imagen en los ejes X e Y, con límites de movimiento que aseguran que la imagen permanezca en la pantalla. Los emisores de eventos (EventEmitter) comunican los cambios de rotación y posición a otros componentes, permitiendo respuestas y ajustes coordinados.
 
+<img src="./src/assets/images/Git-Description/Stick.jpg" alt="Home-Component" width="600" height="auto">
+
 ### Bttns Component
 Otro componente que añade funcionalidades interactivas para mejorar la experiencia del usuario. Gestionando acciones y eventos a través de botones y controles visuales, este componente presenta cuatro botones con diversas funciones: reproducir audio, navegar entre imágenes de la Poked-X y mostrar/u ocultar la descripción del Pokémon seleccionado.
+
+<img src="./src/assets/images/Git-Description/Bttns.jpg" alt="Home-Component" width="400" height="auto">
