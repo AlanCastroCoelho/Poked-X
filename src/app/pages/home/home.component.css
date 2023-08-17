@@ -27,13 +27,13 @@ button {
   letter-spacing: 1px;
   text-decoration: none;
   color: #000;
-  background: #7b1212;
+  background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
   border: 2px solid #000000;
   border-radius: 10px;
   z-index: 80;
-  opacity: .6;
+  opacity: .2;
 }
 
 button:hover {
