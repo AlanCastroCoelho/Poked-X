@@ -51,3 +51,9 @@ Este componente es fundamental al brindar una experiencia interactiva y lúdica 
 Otro componente que añade funcionalidades interactivas para mejorar la experiencia del usuario. Gestionando acciones y eventos a través de botones y controles visuales, este componente presenta cuatro botones con diversas funciones: reproducir audio, navegar entre imágenes de la Poked-X y mostrar/u ocultar la descripción del Pokémon seleccionado.
 
 <img src="./src/assets/images/Git-Description/Bttns.jpg" alt="Home-Component" width="400" height="auto">
+
+## 📩 Contacto
+
+✦ Si estás interesado en comunicarte conmigo, te invito a que me contactes a través de [LinkedIn](https://www.linkedin.com/in/alan-castro-coelho-6bb6441a2/) o [Gmail](mailto:alancasstrocoelho@gmail.com)
+
+✦ En el siguiente [Enlace](https://poked-x.web.app/) podras visitar la web en funcionamiento
